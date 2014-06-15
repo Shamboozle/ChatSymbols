@@ -1,0 +1,16 @@
+[
+{
+  "modid": "cs",
+  "name": "Chat Symbols",
+  "description": "Adds in special text characters to be used in the chat, to look cool on a server.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Shamboozle"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
