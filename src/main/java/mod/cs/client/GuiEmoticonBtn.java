@@ -14,7 +14,7 @@ public class GuiEmoticonBtn extends GuiButton{
 	@Override
 	public void drawButton(Minecraft mc, int mouseX, int mouseY) {
 		
-		if(this.visible){
+		if(this.enabled){
 			
 			if(!isMouseOver(mouseX, mouseY)){
 				GuiChatHandler.drawColorRect(this.xPosition, this.yPosition, this.width, this.height, new Color(40, 40, 40, 159));
@@ -22,10 +22,16 @@ public class GuiEmoticonBtn extends GuiButton{
 				GuiChatHandler.drawColorRect(this.xPosition, this.yPosition, this.width, this.height, new Color(40, 40, 40, 250));
 			}
 			
-			this.drawCenteredString(Minecraft.getMinecraft().fontRenderer, this.displayString, this.xPosition + this.width / 2, this.yPosition + (this.height - 8) / 2, Color.WHITE.getRGB());
-			
+		} else {
+			GuiChatHandler.drawColorRect(this.xPosition, this.yPosition, this.width, this.height, new Color(40, 40, 40, 255));
 		}
 		
+		this.drawCenteredString(Minecraft.getMinecraft().fontRenderer, this.displayString, this.xPosition + this.width / 2, this.yPosition + (this.height - 8) / 2, Color.WHITE.getRGB());
+		
+	}
+	
+	public void setEnabled(boolean value){
+		this.enabled = value;
 	}
 	
 	private boolean isMouseOver(int mouseX, int mouseY) {

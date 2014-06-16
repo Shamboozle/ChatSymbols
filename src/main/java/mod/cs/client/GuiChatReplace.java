@@ -478,7 +478,7 @@ public class GuiChatReplace extends GuiScreen
             GL11.glDisable(GL11.GL_LIGHTING);
         }
         
-        drawString(fontRendererObj, "ChatSymbols Mod: " + ChatSymbols.MOD_VER, 2, 2, Color.WHITE.getRGB());
+        GuiChatHandler.drawScreenHandler();
         
         super.drawScreen(par1, par2, par3);
     }

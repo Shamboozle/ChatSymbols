@@ -16,7 +16,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(name = "Chat Symbols", modid = "cs", version = ChatSymbols.MOD_VER)
 public class ChatSymbols {
 
-	public static final String MOD_VER = "1.0";
+	public static final String MOD_VER = "1.1";
 	
 	@Instance("cs")
 	public static ChatSymbols instance;
